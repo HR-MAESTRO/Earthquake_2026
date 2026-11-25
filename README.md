@@ -65,6 +65,28 @@ cd src
 python ../scripts/phase2_build_data.py
 ```
 
+## Reproducing the results
+
+**From the archived forecasts only** (minutes; needs only this repository and the
+Zenodo data archive, doi:10.5281/zenodo.24541351):
+
+```
+pip install -r requirements.txt
+# download and unzip Earthquake_2026_data.zip from Zenodo, then:
+python scripts/reproduce_from_archive.py <path>/Earthquake_2026_data
+```
+
+This recomputes 51 values reported in Tables 5–8 and checks each against the
+paper. It exits with code 1 if any differ.
+
+**From raw inputs** (hours): download the public inputs with `phase2_build_data.py`.
+Then, from `src/`, run `python ../scripts/phase12_forward2026.py build <basin>` for
+each of the five basins, followed by `python ../scripts/phase12_forward2026.py test`.
+In a clean environment this reproduced the archived 2026 forecasts exactly.
+
+`phase26_temporal_audit.py` checks that forecasts use only information available
+before their issue time.
+
 ## Data
 
 All inputs are public. Raw downloads are not redistributed here. The gridded
@@ -105,7 +127,10 @@ doi:[10.5281/zenodo.24541350](https://doi.org/10.5281/zenodo.24541350).
 | Table 5 offset-only row; Mc = 3.0 rerun; single-source transfer | `phase23_reruns.py`, `phase23_score.py` |
 | Grid offset and cell size; Fig. 4 grid rows | `phase18_grid_sensitivity.py`, `phase18_score.py` |
 | Recalibration, Delaware completeness, 2026 block lengths | `phase22_review2.py` |
-| Appendix Table A1 | `phase24_consolidated.py` |
+| Appendix Table A1 | `phase24_consolidated.py` (M≥4 Brier skill: `phase25_review3.py`) |
+| Appendix Table B1; 2026 relative-difference bootstrap | `phase25_review3.py` |
+| Temporal-cutoff audit | `phase26_temporal_audit.py` |
+| Reproduction check from the data archive | `reproduce_from_archive.py` |
 | Figs. 1, 3, 4 | `phase19_figures.py` |
 | Earlier single-basin work (2023 holdout, declustering, pore pressure, transfer) | `phase34_grid_models.py`, `phase5_transfer.py`, `phase6_final_holdout.py`, `phase7_decluster_pressure.py` |
 
