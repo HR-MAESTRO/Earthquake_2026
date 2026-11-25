@@ -68,8 +68,9 @@ python ../scripts/phase2_build_data.py
 ## Data
 
 All inputs are public. Raw downloads are not redistributed here. The gridded
-datasets, saved forecasts and result tables are archived on Zenodo **[DOI to be
-added]**.
+datasets, saved forecasts and result tables are archived on Zenodo: version 1.0.0 is
+doi:[10.5281/zenodo.24541351](https://doi.org/10.5281/zenodo.24541351); all versions are
+doi:[10.5281/zenodo.24541350](https://doi.org/10.5281/zenodo.24541350).
 
 - [OGS earthquake catalog](https://ogsweb.ou.edu/eq_catalog/)
 - [USGS ComCat](https://earthquake.usgs.gov/fdsnws/event/1/), which includes Kansas and

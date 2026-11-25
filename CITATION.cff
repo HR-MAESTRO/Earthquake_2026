@@ -14,7 +14,7 @@ identifiers:
     description: "Version 1.0.0"
 version: "1.0.0"
 date-released: "2026-11-25"
-# TODO: affiliations and ORCIDs; data DOI.
+# TODO: affiliations and ORCIDs.
 authors:
   - family-names: Rashidi
     given-names: Javad N.
@@ -25,6 +25,18 @@ contact:
     given-names: Hadi
     website: "https://github.com/HR-MAESTRO/Earthquake_2026/issues"
 references:
+  - type: dataset
+    title: "Earthquake_2026 data: gridded multi-basin benchmark, saved forecasts and result tables for injection-induced earthquake forecasting"
+    authors:
+      - family-names: Rashidi
+        given-names: Javad N.
+      - family-names: Rashidi
+        given-names: Hadi
+    publisher:
+      name: Zenodo
+    version: "1.0.0"
+    year: 2026
+    doi: "10.5281/zenodo.24541351"
   - type: article
     title: "Predicting the magnitude of injection-induced earthquakes using machine learning techniques"
     authors:
