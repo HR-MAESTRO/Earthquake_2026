@@ -131,6 +131,7 @@ doi:[10.5281/zenodo.24541350](https://doi.org/10.5281/zenodo.24541350).
 | Appendix Table A1 | `phase24_consolidated.py` (M≥4 Brier skill: `phase25_review3.py`) |
 | Appendix Table B1; 2026 relative-difference bootstrap | `phase25_review3.py` |
 | Temporal-cutoff audit | `phase26_temporal_audit.py` |
+| Row-level depth-to-basement correction (SI Text S4, Table S5) | `phase27_rowlevel_depth.py` |
 | Reproduction check from the data archive | `reproduce_from_archive.py` |
 | Figs. 1, 3, 4 | `phase19_figures.py` |
 | Earlier single-basin work (2023 holdout, declustering, pore pressure, transfer) | `phase34_grid_models.py`, `phase5_transfer.py`, `phase6_final_holdout.py`, `phase7_decluster_pressure.py` |
