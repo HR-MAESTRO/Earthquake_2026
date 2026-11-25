@@ -15,7 +15,7 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.24541278"
     description: "Version 1.0.0"
-version: "1.1.0"
+version: "1.1.1"
 date-released: "2026-11-25"
 # TODO: affiliations and ORCIDs.
 authors:
