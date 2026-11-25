@@ -2,8 +2,9 @@
 
 [![DOI](https://zenodo.org/badge/1472213291.svg)](https://doi.org/10.5281/zenodo.24541277)
 
-Code archive: version 1.1.0 is doi:[10.5281/zenodo.24543163](https://doi.org/10.5281/zenodo.24543163)
-(version 1.0.0: [10.5281/zenodo.24541278](https://doi.org/10.5281/zenodo.24541278)); all versions are
+Code archive: version 1.1.1 is doi:[10.5281/zenodo.24544489](https://doi.org/10.5281/zenodo.24544489)
+(version 1.1.0: [10.5281/zenodo.24543163](https://doi.org/10.5281/zenodo.24543163); version 1.0.0:
+[10.5281/zenodo.24541278](https://doi.org/10.5281/zenodo.24541278)); all versions are
 doi:[10.5281/zenodo.24541277](https://doi.org/10.5281/zenodo.24541277).
 
 Code, pre-registration protocols and analysis notes for the paper *Evaluating the
