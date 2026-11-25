@@ -1,0 +1,10 @@
+2026-11-10T13:44:08-05:00
+208cf48933c9cb8602f3ceb7a8de4f8ea0ad2d1b18d920c32d03b619975f0a3b *docs/protocol_v2.md
+41fe49b386eb3c66d4fc65c235196bee8adcd62f298d8b7e39c9bce36c71fe4d *src/induced/multibasin.py
+d1817032dc902c59a10c106e7ffa8c3a5e1b6c69109e1558ba97d161dd63653d *src/induced/etas.py
+4c61ff268646fef9bf0cb4936520e56ad09586408678f60935693c4a41037b60 *src/induced/grid.py
+d9e2291ebbb4a066e291938a8794267d83ef3f968b69a69018c83944d33a8dd6 *src/induced/gridmodels.py
+4f7265c96e94182853437f5b25918766fca6a1ff581983133004d60c0dfa1cb9 *src/induced/regions.py
+fortworth files present:
+none
+0

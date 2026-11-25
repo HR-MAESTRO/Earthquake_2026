@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code or benchmark, please cite the paper and this software."
+title: "Earthquake_2026: a multi-basin benchmark for forecasting injection-induced earthquakes"
+type: software
+license: MIT
+repository-code: "https://github.com/HR-MAESTRO/Earthquake_2026"
+# TODO before release: author names, order, affiliations and ORCIDs; Zenodo DOI.
+authors:
+  - family-names: "<family name>"
+    given-names: "<given names>"
+references:
+  - type: article
+    title: "Predicting the magnitude of injection-induced earthquakes using machine learning techniques"
+    authors:
+      - family-names: Rashidi
+        given-names: J. N.
+      - family-names: Ghassemieh
+        given-names: M.
+    journal: "Natural Hazards"
+    volume: 118
+    start: 545
+    end: 570
+    year: 2023
+    doi: "10.1007/s11069-023-06018-6"
