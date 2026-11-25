@@ -4,10 +4,16 @@ title: "Earthquake_2026: a multi-basin benchmark for forecasting injection-induc
 type: software
 license: MIT
 repository-code: "https://github.com/HR-MAESTRO/Earthquake_2026"
-# TODO before release: author names, order, affiliations and ORCIDs; Zenodo DOI.
+# TODO before release: affiliations and ORCIDs; Zenodo DOI.
 authors:
-  - family-names: "<family name>"
-    given-names: "<given names>"
+  - family-names: Rashidi
+    given-names: Javad N.
+  - family-names: Rashidi
+    given-names: Hadi
+contact:
+  - family-names: Rashidi
+    given-names: Hadi
+    website: "https://github.com/HR-MAESTRO/Earthquake_2026/issues"
 references:
   - type: article
     title: "Predicting the magnitude of injection-induced earthquakes using machine learning techniques"

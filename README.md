@@ -6,6 +6,9 @@ multi-basin benchmark of statistical, injection-based and machine-learning model
 (manuscript in preparation). It follows Rashidi & Ghassemieh (2023), *Natural
 Hazards* 118:545–570, doi:10.1007/s11069-023-06018-6.
 
+**Authors:** Javad N. Rashidi and Hadi Rashidi (contact). Questions and issues go to
+the [issue tracker](https://github.com/HR-MAESTRO/Earthquake_2026/issues).
+
 ## What is here
 
 The benchmark covers five U.S. basins: Oklahoma, south-central Kansas, and the
