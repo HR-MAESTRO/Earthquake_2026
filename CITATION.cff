@@ -4,7 +4,17 @@ title: "Earthquake_2026: a multi-basin benchmark for forecasting injection-induc
 type: software
 license: MIT
 repository-code: "https://github.com/HR-MAESTRO/Earthquake_2026"
-# TODO before release: affiliations and ORCIDs; Zenodo DOI.
+doi: "10.5281/zenodo.24541277"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24541277"
+    description: "All versions (concept DOI)"
+  - type: doi
+    value: "10.5281/zenodo.24541278"
+    description: "Version 1.0.0"
+version: "1.0.0"
+date-released: "2026-11-25"
+# TODO: affiliations and ORCIDs; data DOI.
 authors:
   - family-names: Rashidi
     given-names: Javad N.

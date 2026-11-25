@@ -1,5 +1,10 @@
 # Earthquake_2026: a multi-basin benchmark for forecasting injection-induced earthquakes
 
+[![DOI](https://zenodo.org/badge/1472213291.svg)](https://doi.org/10.5281/zenodo.24541277)
+
+Code archive: version 1.0.0 is doi:[10.5281/zenodo.24541278](https://doi.org/10.5281/zenodo.24541278);
+all versions are doi:[10.5281/zenodo.24541277](https://doi.org/10.5281/zenodo.24541277).
+
 Code, pre-registration protocols and analysis notes for the paper *Evaluating the
 transferability of probabilistic forecasts of injection-induced earthquakes: a
 multi-basin benchmark of statistical, injection-based and machine-learning models*
