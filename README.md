@@ -78,8 +78,8 @@ pip install -r requirements.txt
 python scripts/reproduce_from_archive.py <path>/Earthquake_2026_data
 ```
 
-This recomputes 51 values reported in Tables 5–8 and checks each against the
-paper. It exits with code 1 if any differ.
+This recomputes 51 values reported in Tables 4–7 of the manuscript and checks each
+against it. It exits with code 1 if any differ.
 
 **From raw inputs** (hours): download the public inputs with `phase2_build_data.py`.
 Then, from `src/`, run `python ../scripts/phase12_forward2026.py build <basin>` for
@@ -110,32 +110,36 @@ doi:[10.5281/zenodo.24541350](https://doi.org/10.5281/zenodo.24541350).
 
 ## Script map
 
+Numbering follows the JGR: Solid Earth manuscript and its Supporting Information (SI).
+
 | Paper item | Script(s) |
 | --- | --- |
 | Data download, gridding, injection lags | `phase2_build_data.py`, `build_lagged_grid.py` |
-| Section 6.1: the 2023 task (random vs chronological vs walk-forward) | `phase0_reproduce.py`, `phase1_walkforward.py` |
-| Section 6.1: modern comparators on the 2023 task | `phase21_modern_models.py` |
-| Rerun on the original 2023 input matrix (when available) | `phase20_original_rerun.py` |
+| Figure 1 (study area) | `phase19_figures.py` |
+| Table 1; Figure 2 values; Tables 5 and 6 | `phase17_tables.py` |
+| Figure 2 drawing | `fig2_prauc_by_basin.py` |
+| Section 5.1: full space–time ETAS | `phase9_etas_validation.py` |
+| Table 3 (sources of gridded-ETAS skill) | `phase22_etas_attribution.py` |
+| Table 4 (M≥4 ablation) | `phase9_revision_runs.py`, `phase9_analysis.py`; offset-free row: `phase23_reruns.py`, `phase23_score.py` |
+| Section 5.3: single-source transfer | `phase23_reruns.py`, `phase23_score.py` |
 | Protocol v1 (Midland) | `phase8_multibasin.py` |
-| Lags, pooling and LOBO runs, ablations | `phase9_revision_runs.py`, `phase9_analysis.py` |
-| Midland basement sensitivity | `phase9_midland_basement.py` |
 | Protocol v2 (Fort Worth) | `phase10_fortworth.py` |
-| Protocol v3 (2026 test), Table 8 | `phase12_forward2026.py` |
-| Look-ahead corrections, Table 9 | `phase13_leak_corrected.py` |
-| Look-ahead-free development reruns, Table 10 | `phase16_clean_dev.py`, `phase16_compare.py` |
-| Tables 1, 2, 5–7; Fig. 2 rows | `phase17_tables.py` (full ETAS: `phase9_etas_validation.py`) |
-| Table 3 (external `etas` package) | `phase11_etas_package.py`, `phase14_etas_free_background.py`, `phase14_score.py`, `phase15_etas_clean_dev.py` |
-| Table 4 (sources of ETAS skill) | `phase22_etas_attribution.py` |
-| Table 5 offset-only row; Mc = 3.0 rerun; single-source transfer | `phase23_reruns.py`, `phase23_score.py` |
-| Grid offset and cell size; Fig. 4 grid rows | `phase18_grid_sensitivity.py`, `phase18_score.py` |
-| Recalibration, Delaware completeness, 2026 block lengths | `phase22_review2.py` |
-| Appendix Table A1 | `phase24_consolidated.py` (M≥4 Brier skill: `phase25_review3.py`) |
-| Appendix Table B1; 2026 relative-difference bootstrap | `phase25_review3.py` |
-| Temporal-cutoff audit | `phase26_temporal_audit.py` |
-| Row-level depth-to-basement correction (SI Text S4, Table S5) | `phase27_rowlevel_depth.py` |
+| Protocol v3 (2026 test), Table 7 | `phase12_forward2026.py`; relative-difference bootstrap: `phase25_review3.py`; block lengths: `phase22_review2.py` |
+| Section 5.4: recalibration | `phase22_review2.py` |
+| Figure 3 | `phase19_figures.py` |
+| SI Text S1, Tables S1–S2 (look-ahead corrections, corrected development runs) | `phase13_leak_corrected.py`, `phase16_clean_dev.py`, `phase16_compare.py` |
+| SI Text S2, Tables S3–S4 (external `etas` package) | `phase11_etas_package.py`, `phase14_etas_free_background.py`, `phase14_score.py`, `phase15_etas_clean_dev.py` |
+| SI Text S3, Figure S1: grid offset and cell size | `phase18_grid_sensitivity.py`, `phase18_score.py`, `phase19_figures.py` |
+| SI Text S3: Delaware completeness; Mc = 3.0 | `phase22_review2.py`; `phase23_reruns.py` |
+| SI Text S3: Midland basement gaps; declustering and pore pressure | `phase9_midland_basement.py`; `phase7_decluster_pressure.py` |
+| SI Text S4: temporal audit | `phase26_temporal_audit.py` |
+| SI Text S4, Table S5: row-level depth to basement | `phase27_rowlevel_depth.py`; depth screen and checks: `phase28_screened_depth.py`, `phase28_presub_checks.py` |
+| SI Text S5 (2023 task: random vs chronological vs walk-forward; newer comparators) | `phase0_reproduce.py`, `phase1_walkforward.py`, `phase21_modern_models.py` |
+| Rerun on the original 2023 input matrix (when available) | `phase20_original_rerun.py` |
+| SI Table S6 (all models on matched rows) | `phase24_consolidated.py`, `phase25_review3.py` |
+| SI Table S7 (reliability bins behind Figure 3) | `phase25_review3.py` |
 | Reproduction check from the data archive | `reproduce_from_archive.py` |
-| Figs. 1, 3, 4 | `phase19_figures.py` |
-| Earlier single-basin work (2023 holdout, declustering, pore pressure, transfer) | `phase34_grid_models.py`, `phase5_transfer.py`, `phase6_final_holdout.py`, `phase7_decluster_pressure.py` |
+| Earlier single-basin work (2023 holdout, transfer) | `phase34_grid_models.py`, `phase5_transfer.py`, `phase6_final_holdout.py` |
 
 ## Pre-registration records
 

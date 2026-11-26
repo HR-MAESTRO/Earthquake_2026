@@ -74,3 +74,31 @@ python ../scripts/phase27_rowlevel_depth.py score
 
 Outputs go to `results/phase27_rowlevel_depth/` under the work folder. The revised
 forecasts are not in data archive version 1.0.0.
+
+## Implausible well depths (pre-submission checks, 26 Nov 2026)
+
+Some operator reports contain mistyped depths, for example a packer at 2,318,429 ft in a
+2,992 ft well. The pipeline did not screen reported depths, so where a well lacked an
+injection-bottom depth, the well table fell back to such a packer value.
+
+`scripts/phase28_screened_depth.py` reruns the row-level correction with a screen. Any
+depth above 25,000 ft, and any injection-bottom or packer depth more than 1.5 times the
+well's total depth, is set to missing. This removes values from 7,056 records of 148
+Oklahoma wells; 852 of those records, from 57 wells, exceed 25,000 ft. It changes no value
+used in the other basins. The largest Oklahoma cell value falls from about 27 km to about
+10.5 km.
+
+With the screen:
+
+- **Significance:** no comparison changes statistical significance. The largest shifts
+  are in Kansas, within ±0.013.
+- **2026 test:** LOBO hybrid − ETAS is +0.001 (90% CI −0.042, 0.036), equivalent.
+- **Brier skill:** changes by at most 0.009 across models, basins and both thresholds
+  (0.008 without the screen). See `results/phase28_presub/`.
+- **Midland post hoc equivalence within ±0.01:** still holds, narrowly. The 90% CI is
+  −0.009 to +0.008 with the screen, −0.010 to +0.006 for row-level depth without it, and
+  −0.007 to +0.007 as reported.
+
+Without the screen, three point estimates near zero (Midland LOBO − ETAS and LOBO − SI,
+Oklahoma pooled − local) change sign by 0.001–0.002. Their significance does not change.
+`scripts/phase28_presub_checks.py` computes the Brier skill and equivalence checks.
